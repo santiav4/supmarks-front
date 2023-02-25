@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "./Footer";
 import Location from "./Location";
 import Header from "./Header";
+import Chat from "./Chat";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -14,8 +15,8 @@ function App() {
                 <Header />
 
                 <Location />
+                <Chat />
             </div>
-
             <Footer />
         </div>
     );

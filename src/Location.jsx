@@ -11,7 +11,7 @@ const Location = () => {
                 <h2 className=" text-3xl mb-8">
                     Lo que quieres, cuando lo quieres.
                 </h2>
-                <div className=" rounded-sm rounded-tr-xl rounded-bl-xl bg-white flex items-center px-2 w-full h-12 mb-6">
+                <div className=" rounded-sm rounded-tr-3xl rounded-bl-3xl bg-white flex items-center px-2 w-full h-12 mb-6">
                     <ImLocation
                         size={30}
                         className=" mr-8 text-black hover:cursor-pointer "
@@ -27,14 +27,12 @@ const Location = () => {
                         className=" text-black hover:cursor-pointer"
                     />
                 </div>
-                <button className=" rounded-sm rounded-tr-xl rounded-bl-xl h-14 px-4 bg-[#010050] font-bold text-xl mb-24">
+                <button className=" rounded-sm rounded-tr-3xl rounded-bl-3xl h-14 px-4 bg-[#010050] font-bold text-xl mb-24">
                     Comenzar la Aventura
                 </button>
-                <h3 className=" text-lg">
+                <h3 className=" text-lg font-semibold">
                     Already have an account?{" "}
-                    <a
-                        className="hover:underline font-bold text-[#2396ff]"
-                        href="">
+                    <a className="hover:underline  text-[#2396ff]" href="">
                         Log in
                     </a>
                 </h3>
