@@ -28,7 +28,7 @@ const Location = () => {
                     />
                 </div>
                 <button className=" transition-all duration-300 hover:bg-white hover:text-black rounded-sm rounded-tr-3xl rounded-bl-3xl h-14 px-4 bg-[#010050] font-bold text-xl mb-24">
-                    Comenzar la Aventura
+                    <a href="list">Comenzar la Aventura</a>
                 </button>
                 <h3 className=" text-lg font-semibold opacity-70">
                     Already have an account?{" "}
