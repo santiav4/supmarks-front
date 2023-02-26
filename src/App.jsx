@@ -13,7 +13,6 @@ function App() {
         <div className="">
             <div className=" h-screen bg-cover bg-[url('assets/hero.gif')] ">
                 <Header />
-
                 <Location />
                 <Chat />
             </div>

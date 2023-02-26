@@ -10,7 +10,7 @@ import listLogo from "./assets/list-logo.png";
 
 const HeadingList = () => {
     return (
-        <div className=" px-8 h-16 flex justify-between items-center bg-[#0169E8] text-white">
+        <div className=" z-10 sticky top-0 px-8 h-16 flex justify-between items-center bg-[#0169E8] text-white">
             <a className=" text-black" href="/">
                 <IoIosArrowBack size={30} />
             </a>
@@ -24,7 +24,7 @@ const HeadingList = () => {
                 </option>
                 <option value="pickup">Pick-Up (Recogido)</option>
             </select>
-            <div>
+            <div className="min-w-[540px]">
                 <input
                     className=" placeholder: pl-4  rounded-bl-3xl w-[400px] h-10 outline-none"
                     placeholder="Guayama, Puerto Rico"
@@ -48,7 +48,7 @@ const HeadingList = () => {
                 <BiUser size={22} className=" inline " /> Log in
             </div>
             <div className=" hover:text-[#549ad6] hover:cursor-pointer ">
-                En <BsCaretDownFill size={12} className="  inline" />{" "}
+                En <BsCaretDownFill size={12} className="  inline" />
             </div>
         </div>
     );

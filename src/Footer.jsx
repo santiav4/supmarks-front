@@ -7,6 +7,7 @@ import { AiFillFacebook } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
+    let date = new Date();
     return (
         <div className="   bg-[#0169E8] text-white pt-12 border-t-[1px] border-stone-900">
             <div className=" w-[1210px] mx-auto">
@@ -20,26 +21,30 @@ const Footer = () => {
                     </div>
                     <div className=" ">
                         <h2 className=" text-lg pb-3">Supmarks</h2>
-                        <h3 className=" hover:underline pb-3">
+                        <h3 className=" hover:cursor-pointer hover:underline pb-3">
                             Become a Merchant
                         </h3>
-                        <h3 className=" hover:underline pb-3">
+                        <h3 className=" hover:cursor-pointer hover:underline pb-3">
                             Become a Driver
                         </h3>
-                        <h3 className=" hover:underline">Become a Developer</h3>
+                        <h3 className=" hover:cursor-pointer hover:underline">
+                            Become a Developer
+                        </h3>
                     </div>
                     <div>
                         <h2 className="  text-lg pb-3">Help & Legal</h2>
-                        <h3 className=" hover:underline pb-3">
+                        <h3 className=" hover:cursor-pointer hover:underline pb-3">
                             Help & Support
                         </h3>
-                        <h3 className=" hover:underline pb-3">
+                        <h3 className=" hover:cursor-pointer hover:underline pb-3">
                             Terms & Conditions
                         </h3>
-                        <h3 className=" hover:underline pb-3">
+                        <h3 className=" hover:cursor-pointer hover:underline pb-3">
                             Privacy Policy
                         </h3>
-                        <h3 className=" hover:underline">FAQ</h3>
+                        <h3 className=" hover:cursor-pointer hover:underline">
+                            FAQ
+                        </h3>
                     </div>
                 </div>
                 <hr className=" border-[#5a5a5a] pb-6" />
@@ -77,7 +82,8 @@ const Footer = () => {
                 </div>
                 <div className=" pb-6">
                     <p className=" text-center">
-                        Supmarks | All Rights Reserved &copy; 2020
+                        Supmarks | All Rights Reserved &copy;
+                        {date.getFullYear()}
                     </p>
                 </div>
             </div>
