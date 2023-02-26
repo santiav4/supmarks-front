@@ -10,7 +10,7 @@ function App() {
     const [count, setCount] = useState(0);
 
     return (
-        <div className="">
+        <div className=" overflow-hidden">
             <div className=" h-screen bg-cover bg-[url('assets/hero.gif')] ">
                 <Header />
                 <Location />

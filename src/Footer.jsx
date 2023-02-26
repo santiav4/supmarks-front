@@ -47,7 +47,7 @@ const Footer = () => {
                         </h3>
                     </div>
                 </div>
-                <hr className=" border-[#5a5a5a] pb-6" />
+                <hr className="  border-[#5a5a5a] pb-6" />
                 <div className=" flex justify-around pb-10">
                     <div className="flex items-center">
                         <div className=" mr-6 font-bold text-lg">

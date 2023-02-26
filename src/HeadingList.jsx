@@ -36,7 +36,6 @@ const HeadingList = () => {
                 </button>
             </div>
             <div className=" hover:text-[#549ad6] hover:cursor-pointer px-4">
-                {" "}
                 <ImLocation size={22} className=" inline" /> list view
             </div>
             <div className=" hover:text-[#549ad6] hover:cursor-pointer px-4">
