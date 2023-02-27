@@ -3,7 +3,7 @@ import logo from "./assets/logo-hero.png";
 import { ImLocation } from "react-icons/im";
 import { MdLocationSearching } from "react-icons/md";
 
-const Location = () => {
+const Location = ({ page, setPage }) => {
     return (
         <div className="text-white  h-full flex justify-center items-center">
             <div className=" w-[453px] flex flex-col items-center">
@@ -27,8 +27,10 @@ const Location = () => {
                         className=" text-black hover:cursor-pointer"
                     />
                 </div>
-                <button className=" transition-all duration-300 hover:bg-white hover:text-black rounded-sm rounded-tr-3xl rounded-bl-3xl h-14 px-4 bg-[#010050] font-bold text-xl mb-24">
-                    <a href="list">Comenzar la Aventura</a>
+                <button
+                    onClick={() => setPage("location")}
+                    className=" transition-all duration-300 hover:bg-white hover:text-black rounded-sm rounded-tr-3xl rounded-bl-3xl h-14 px-4 bg-[#010050] font-bold text-xl mb-24">
+                    Comenzar la Aventura
                 </button>
                 <h3 className=" text-lg font-semibold opacity-70">
                     Already have an account?{" "}

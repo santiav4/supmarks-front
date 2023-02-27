@@ -8,12 +8,13 @@ import { BsCaretDownFill } from "react-icons/bs";
 
 import listLogo from "./assets/list-logo.png";
 
-const HeadingList = () => {
+const HeadingList = ({ page, setPage }) => {
     return (
-        <div className=" z-10 sticky top-0 px-8 h-16 flex justify-between items-center bg-[#0169E8] text-white">
-            <a className=" text-black" href="/">
-                <IoIosArrowBack size={30} />
-            </a>
+        <div
+            onClick={() => setPage("main")}
+            className=" hover:cursor-pointer z-10 sticky top-0 px-8 h-16 flex justify-between items-center bg-[#0169E8] text-white">
+            <IoIosArrowBack className=" text-black" size={30} />
+
             <img width={100} src={listLogo} alt="" />
             <select
                 className="  rounded-sm rounded-tr-3xl rounded-bl-3xl px-4 h-10 text-black outline-none"

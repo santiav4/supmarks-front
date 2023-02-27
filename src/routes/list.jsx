@@ -25,7 +25,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Carousel from "../Carousel";
 
-const list = () => {
+const list = ({ page, setPage }) => {
     const [isLeft, setIsLeft] = useState(true);
 
     const handleIsLeft = () => {
@@ -85,7 +85,7 @@ const list = () => {
     ];
     return (
         <>
-            <HeadingList />
+            <HeadingList page={page} setPage={setPage} />
 
             <div className=" overflow-hidden w-[1324px] mt-4 mx-auto mb-8 bg-pink-200  h-[270px] ">
                 <Carousel />
@@ -130,7 +130,6 @@ const list = () => {
             </div>
 
             <Chat />
-            <Footer />
         </>
     );
 };
